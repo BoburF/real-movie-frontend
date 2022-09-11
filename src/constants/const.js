@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://movie-real-backend-real.vercel.app'
