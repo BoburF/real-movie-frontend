@@ -5,12 +5,12 @@ import './Sidebar.scss'
 
 const Sidebar = () => {
   const { id } = useParams()
-  const [movie, setMovie] = useState(id ? '/movies/' + id : '/movies/631b4ba546b26755547ee2ea')
+  const [movie, setMovie] = useState(id ? '/movies/' + id : '/movies/63202f9f29a65071b72a0de9')
   const [position, setPosition] = useState('-100%')
   const [sideBarposition, setSideBarPosition] = useState('10px')
 
   useEffect(() => {
-    setMovie('/movies/' + (id ? id : localStorage.getItem('movie') ? localStorage.getItem('movie') : '631b4ba546b26755547ee2ea'))
+    setMovie('/movies/' + (id ? id : localStorage.getItem('movie') ? localStorage.getItem('movie') : '63202f9f29a65071b72a0de9'))
     if (id) {
       localStorage.setItem('movie', id)
     }
